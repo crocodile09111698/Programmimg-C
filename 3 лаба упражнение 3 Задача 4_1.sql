@@ -1,0 +1,3 @@
+SELECT * FROM Production.Product
+TABLESAMPLE (15 PERCENT)
+ORDER BY ProductID
