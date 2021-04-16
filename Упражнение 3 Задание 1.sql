@@ -1,0 +1,6 @@
+SELECT 
+	ROW_NUMBER() OVER (ORDER BY SalesYTD DESC) AS N
+	,SalesYTD
+	,BusinessEntityID
+FROM Sales.SalesPerson
+WHERE TerritoryID IS NOT NULL AND SalesYTD IS NOT NULL
