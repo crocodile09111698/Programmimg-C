@@ -1,0 +1,5 @@
+SELECT * 
+FROM TableA
+UNION ALL
+SELECT *
+FROM TableB
